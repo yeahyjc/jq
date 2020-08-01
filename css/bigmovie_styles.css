@@ -1,0 +1,148 @@
+body{
+font-size:0.7em;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background-image:url(../images/bigmovie.jpg);
+background-size: cover;
+background-repeat:no-repeat;
+margin: 0px;
+}
+
+.nr1 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:450px;
+left:180px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr2 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:470px;
+left:285px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr3 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:500px;
+left:385px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr4 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:520px;
+left:470px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr5 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:480px;
+left:640px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr6 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:510px;
+left:740px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr7 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:530px;
+left:940px;
+text-align:center;
+padding:3px 0px;
+}
+
+.nr8 a{
+color:#333;
+width:50px;
+line-height:10px;
+background-color:rgba(255,255,255,0.2);
+display:block;
+text-decoration:none;
+position:absolute;
+top:470px;
+left:940px;
+text-align:center;
+padding:3px 0px;
+}
+
+a:hover{
+color:#fff;
+background-color:#666;
+}
+
+.tooltip{
+position:absolute;
+left:-2000px;
+background-color:#dedede;
+padding:5px;
+border:1px solid #fff;
+width:550px;
+height:250px;
+}
+
+
+
+.tooltip p{
+margin:0;
+padding:0;
+color:#fff;
+background-color:#222;
+padding:5px 5px;
+width:540px;
+height:240px;
+font-size: 20px
+}

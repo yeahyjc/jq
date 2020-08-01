@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登录</title>
+<script type="text/javascript">
+	function checkMessage(){
+		var name = document.getElementById("name").value;
+		var password = document.getElementById("password").value;
+		if(name==""){
+			alert("用户名不能为空");
+			return false;
+		}
+		if(password==""){
+			alert("密码不能为空");
+			return false;
+		}
+		if(password.length<6){
+			alert("密码长度不能小于6位");
+			return false;
+		}
+		
+	}
+</script>
+	
+	<script type="text/javascript">
+function showTime()
+{
+ 
+ var today = new Date();
+ 
+ var year = today.getFullYear();
+ var month = today.getMonth()+1;
+ var day = today.getDate();
+ var hours = today.getHours();
+ var minutes = today.getMinutes();
+ var seconds = today.getSeconds();
+ 
+var week;
+switch (today.getDay()){
+case 1: week="星期一"; break;
+case 2: week="星期二"; break;
+case 3: week="星期三"; break;
+case 4: week="星期四"; break;
+case 5: week="星期五"; break;
+case 6: week="星期六"; break;
+default: week="星期天";
+}
+
+	
+ <!--month  = month<10  ? "0"+month : month;-->
+ day  = day <10  ? "0"+day : day;
+ hours  = hours<10  ? "0"+hours : hours;
+ minutes = minutes<10 ? "0"+minutes : minutes;
+ seconds = seconds<10 ? "0"+seconds : seconds;
+  
+ 
+ var str = year+"年"+month+"月"+day+"日 "+hours+":"+minutes+":"+seconds+"  "+week;
+  
+ //获取id=result的对象
+ var obj = document.getElementById("result");
+ //将str的内容写入到id=result的<div>中去
+ obj.innerHTML = str;
+ //延时器
+ window.setTimeout("showTime()",1000);
+}
+</script>
+<style type="text/css">
+#result{
+ width:500px;
+ background:rgba(0,0,0,0.00);
+ margin:0px auto;
+ font-size:30px;
+ color:#6CCAEF;
+	margin-top: 15px
+	
+	}
+</style>
+</head>
+
+<body style="background-image: url(images/a.jpg);background-size: cover" onLoad="showTime()">
+		<div id="result"></div>
+
+	<div id="back"><a href="index.html" style="font-size: 30px; margin-left: 20px; color: aliceblue;text-decoration: none">返回首页</a></div>
+	<div style="text-align: center; margin-top:  285px; background: rgba(255,255,255,0.5);border: 2px black solid">
+        <form action="php/login.php" method="post" onsubmit="return checkMessage()">
+        <h1>用户登录</h1><br>
+        <input type="text" name="name" id="name" style="height:25px;width:300px; font-size:16px" placeholder="用户名或ID"/><br><br><br><br><br>
+        <input type="password" name="pwd" id="password" style="height:25px;width:300px; font-size:16px" placeholder="密码"/><br><br><br>
+        <input type="submit" value="登录" class="button_blue">&nbsp
+        <a href="register.html" style="color: white">注册</a>
+		</form>
+	</div>
+</body>
+</html>
